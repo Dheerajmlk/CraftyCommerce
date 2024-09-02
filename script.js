@@ -1,6 +1,13 @@
 // Array to hold cart items
 const cart = [];
 
+// Object to store reviews for each product
+const reviews = {
+    product1: [],
+    product2: [],
+    // Add entries for other products as needed
+};
+
 // Function to add items to the cart
 function addToCart(productName, productPrice) {
     const product = { name: productName, price: productPrice };
@@ -48,4 +55,29 @@ function removeFromCart(index) {
 function clearCart() {
     cart.length = 0; // Empty the cart array
     updateCartDisplay();
+}
+
+// Function to add a review
+function addReview(event, productId) {
+    event.preventDefault();
+    const reviewInput = document.getElementById(`review-text-${productId}`);
+    const reviewText = reviewInput.value.trim();
+
+    if (reviewText) {
+        reviews[productId].push(reviewText);
+        reviewInput.value = ''; // Clear input field
+        updateReviewsDisplay(productId); // Update review display
+    }
+}
+
+// Function to update the reviews display
+function updateReviewsDisplay(productId) {
+    const reviewList = document.getElementById(`reviews-${productId}`);
+    reviewList.innerHTML = ''; // Clear previous reviews
+
+    reviews[productId].forEach(review => {
+        const listItem = document.createElement('li');
+        listItem.textContent = review;
+        reviewList.appendChild(listItem);
+    });
 }

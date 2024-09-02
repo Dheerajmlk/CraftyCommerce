@@ -44,6 +44,7 @@ main {
     padding: 10px;
     width: 200px;
     text-align: center;
+    position: relative;
 }
 
 .product img {
@@ -59,6 +60,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -104,4 +106,36 @@ footer {
 
 .cart-content button {
     margin: 10px;
+}
+
+/* Reviews section styles */
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.review-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-list li {
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.reviews form {
+    margin-top: 10px;
+}
+
+.reviews input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.reviews button {
+    padding: 6px;
 }
