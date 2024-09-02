@@ -13,6 +13,8 @@
             <a href="#">Home</a>
             <a href="#">Products</a>
             <a href="#">Contact</a>
+            <!-- View Cart Button -->
+            <button id="view-cart-btn" onclick="toggleCart()">View Cart</button>
         </nav>
     </header>
 
@@ -31,7 +33,7 @@
                 <p>$29.99</p>
                 <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
             </article>
-
+            
             <!-- New Products -->
             <article class="product">
                 <img src="product3.jpg" alt="Product 3">
@@ -60,10 +62,20 @@
         </section>
     </main>
 
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0.00</p>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="toggleCart()">Close</button>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 CraftyCommerce</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
+</body
