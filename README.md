@@ -1,1 +1,7 @@
-# CraftyCommerce
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
