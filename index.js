@@ -18,6 +18,7 @@
 
     <main>
         <section class="product-list">
+            <!-- Existing Products -->
             <article class="product">
                 <img src="product1.jpg" alt="Product 1">
                 <h2>Product 1</h2>
@@ -30,7 +31,32 @@
                 <p>$29.99</p>
                 <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
             </article>
-            <!-- Add more products as needed -->
+
+            <!-- New Products -->
+            <article class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>$39.99</p>
+                <button onclick="addToCart('Product 3', 39.99)">Add to Cart</button>
+            </article>
+            <article class="product">
+                <img src="product4.jpg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>$49.99</p>
+                <button onclick="addToCart('Product 4', 49.99)">Add to Cart</button>
+            </article>
+            <article class="product">
+                <img src="product5.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>$24.99</p>
+                <button onclick="addToCart('Product 5', 24.99)">Add to Cart</button>
+            </article>
+            <article class="product">
+                <img src="product6.jpg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>$34.99</p>
+                <button onclick="addToCart('Product 6', 34.99)">Add to Cart</button>
+            </article>
         </section>
     </main>
 
